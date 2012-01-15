@@ -1,24 +1,14 @@
 ---
 layout: default
-description: A description about my blog homepage
+description: 
 ---
 
-<div id="posts">
-  <h2>Blog Posts</h2>
-  <ul>
+<div id="posts" style="margin-top:20px">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+			<div class="row">
+							<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+			</div>
     {% endfor %}
-  </ul>
 </div>
 
-<div id="pages">
-  <h2>Pages</h2>
-  <ul>
-    {% for page in site.html_pages %}
-      {% if page.title %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
+
