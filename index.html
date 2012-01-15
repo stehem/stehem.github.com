@@ -7,6 +7,7 @@ description:
     {% for post in site.posts %}
 			<div class="row">
 							<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+							{{ post.content | strip_html | truncatewords: 30 }} <a href="{{post.url}}">Read more</a> 
 			</div>
     {% endfor %}
 </div>

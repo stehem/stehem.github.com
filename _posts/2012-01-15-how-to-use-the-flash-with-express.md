@@ -20,7 +20,7 @@ Register a dynamic helper In *app.js* or your equivalent:
 Add to the flash object where needed:
 
 <pre class="prettyprint" style="padding-bottom:15px;"> 
-	app.post'/new_user', function(req, res){
+	app.post('/new_user', function(req, res){
 		//..
 		req.flash('notice', "Account successfully created.");
 	});
