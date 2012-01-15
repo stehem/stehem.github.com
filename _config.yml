@@ -7,7 +7,7 @@ markdown: rdiscount
 
 # configuration required for some pages
 
-domain: stehem.net
+domain: www.stehem.net
 title: stehem's blog
 author: Me
 email: me@example.com
