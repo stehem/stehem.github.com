@@ -28,16 +28,27 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 </script>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+				body {background-color:#0A191C;}
+				h2 a, h2, h2 a:hover {color:#5ACBF3;text-decoration:underline}
+				.post {color:#8899AA}	
+				.post .snippet a, .nav a, .post p a {color:#EEEEEE}	
+				.snippet a {text-decoration:underline}
+				.post em {color:#5ACBF3}	
+				.post {margin: 30px 0 30px 0}
+				header {padding:40px 0 40px 0;font-family: 'Lobster', cursive;}
+				header a, header a:hover {color:#9BF11A;font-size:30px;text-decoration:none}
+</style>
 </head>
 <body onload="prettyPrint()">
 <div class="container">
 	<header>
+	<a href="/">stehem.net</a>
 	</header>
 	<div id="main" role="main">
     {{ content }}
 	</div>
-	<footer>
-	</footer>
 </div> <!--! end of #container -->
 </body>
 </html>

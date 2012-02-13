@@ -1,14 +1,9 @@
 ---
 layout: default
 ---
-
-<div class="span16" style="margin-top:10px;">
-	<a href="/">Home</a>
-</div>
-
-<div class="post" style="margin-top:20px">
+<div class="post">
 	<h2>{{page.title}}</h2>
-	{% if page.date %}<div class="postdate">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</div>{% endif %}
+	{% if page.date %}<div class="postdate"><em>Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</em></div>{% endif %}
 	<br>
 	{{ content }}
 </div>

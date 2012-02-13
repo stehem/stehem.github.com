@@ -5,9 +5,10 @@ description:
 
 <div id="posts" style="margin-top:20px">
     {% for post in site.posts %}
-			<div class="row">
-							<h2><a href="{{post.url}}">{{post.title}}</a></h2>
-							{{ post.content | strip_html | truncatewords: 30 }} <a href="{{post.url}}">Read more</a> 
+			<div class="row post">
+							{{date}}<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+							{{ post.content | strip_html | truncatewords: 30 }} <span class="snippet"><a href="{{post.url}}">Read more</a></span>
+							<br><em>Published <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></em>
 			</div>
     {% endfor %}
 </div>
