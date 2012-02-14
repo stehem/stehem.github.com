@@ -31,7 +31,7 @@ $ pygmentize -S default -f html > stylesheets/pygments.css
 
 Now you just have to include the generated css file in your layout.
 
-Bonus: if you use Twitter Bootstrap, you need an extra step because Bootstrap's styles will conflict and mees up our hard-earned sweet
+Bonus: if you use Twitter Bootstrap, you need an extra step because Bootstrap's styles will conflict and mess up our hard-earned sweet
 syntax highlighting.
 
 Locate this line in *bootstrap.min.css*
