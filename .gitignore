@@ -1,4 +1,5 @@
+*.swp
+*.swo
 _site
 _sass/.sass-cache
 .sass-cache
-*.swp

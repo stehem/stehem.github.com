@@ -10,28 +10,28 @@ you can more or less have the same thing with Express.
 
 Register a dynamic helper In *app.js* or your equivalent:
 
-<pre class="prettyprint" style="padding-bottom:15px;"> 
+{% highlight javascript %}
 	app.configure(function(){
 	//...
 		app.dynamicHelpers({flash: function(req, res){return req.flash();}});
 	});
-</pre>
+{% endhighlight %}
 
 Add to the flash object where needed:
 
-<pre class="prettyprint" style="padding-bottom:15px;"> 
+{% highlight javascript %}
 	app.post('/new_user', function(req, res){
 		//..
 		req.flash('notice', "Account successfully created.");
 	});
-</pre>
+{% endhighlight %}
 
 And finally in your view, a *Jade* template in this case:
 
-<pre class="prettyprint" style="padding-bottom:15px;"> 
+{% highlight javascript %}
 	if typeof flash != 'undefined' && flash.notice
 		!= flash.notice
-</pre>
+{% endhighlight %}
 
 And that's it. Hope it helps someone out.
 

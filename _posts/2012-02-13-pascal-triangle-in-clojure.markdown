@@ -5,9 +5,10 @@ description: How to generate a Pascal's triangle with Clojure
 tags: [clojure]
 ---
 
-Pascal's triangle is described <a href="http://en.wikipedia.org/wiki/Pascal%27s_triangle">here</a>
+Pascal's triangle is a rather simple mathematics construct where each member of the subsequent lines is the sum of the two members directly above it in the triangle. Pascal's triangle is described in details [here](http://en.wikipedia.org/wiki/Pascal%27s_triangle)
 
-<pre class="prettyprint" style="padding-bottom:15px;"> 
+{% highlight clojure %}
+
 (require 'clojure.string)
 (require 'clojure.java.io)
 
@@ -56,7 +57,7 @@ Pascal's triangle is described <a href="http://en.wikipedia.org/wiki/Pascal%27s_
 
 (doseq [line (triangle 1 8)] (println (apply str (repeat (- 9 (count line)) " ")) line))
 
-</pre>
+{% endhighlight %}
 
 
 
