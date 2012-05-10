@@ -9,6 +9,11 @@ So you got a clean 12.04 install or you are starting out with Ruby on Ubuntu, ei
 just go ahead and follow the steps on the rbenv site it will fail on Ubuntu because we need to use
 bashrc instead of bash_profile.
 
+Start by installing a bunch of stuff needed such as zlib
+{% highlight bash %}
+$ sudo apt-get install zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev
+{% endhighlight %}
+
 
 {% highlight bash %}
 $ cd
