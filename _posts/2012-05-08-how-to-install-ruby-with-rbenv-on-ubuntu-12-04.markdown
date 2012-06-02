@@ -9,9 +9,9 @@ So you got a clean 12.04 install or you are starting out with Ruby on Ubuntu, ei
 just go ahead and follow the steps on the rbenv site it will fail on Ubuntu because we need to use
 bashrc instead of bash_profile.
 
-Start by installing a bunch of stuff needed such as zlib
+Start by installing a bunch of stuff needed such as zlib and git
 {% highlight bash %}
-$ sudo apt-get install zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev
+$ sudo apt-get install zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev git-core
 {% endhighlight %}
 
 
@@ -49,7 +49,7 @@ $ git clone git://github.com/sstephenson/ruby-build.git
 Install Ruby
 
 {% highlight bash %}
-$ rbenv install 1.9.3-p185
+$ rbenv install 1.9.3-p194
 {% endhighlight %}
 
 You will have to rehash everytime you install a Ruby version or a gem
@@ -61,7 +61,7 @@ $ rbenv rehash
 Make a Ruby version default:
 
 {% highlight bash %}
-rbenv global 1.9.3-p185
+rbenv global 1.9.3-p194
 {% endhighlight %}
 
 Test:

@@ -31,20 +31,19 @@ $ sudo add-apt-repository ppa:wsnipex/xbmc-xvba
 $ sudo apt-get update
 {% endhighlight %}
 
-Now install Synaptic if you do not have it already
-
+Find the name of the xvba version we want to install:
 {% highlight bash %}
-$ sudo apt-get install synaptic
+$ apt-cache madison xbmc
+$ apt-cache madison xbmc-bin
+{% endhighlight %}
+The version names we want are on lines ending with "Packages" and containing the xbmc-xvba ppa.
+
+Install xbmc:
+{% highlight bash %}
+$ sudo apt-get install xbmc=COPY_HERE_THE_VERSION_NAME_FOR_XBMC xbmc-bin=COPY_HERE_THE_VERSION_NAME_FOR_XBMC-BIN
 {% endhighlight %}
 
-Now launch Synaptic, look for the xbmc package, select/highlight it, go in the Package menu and click Force Version, here you need to select
-the correct xvba version, look up the exact version in the ppa if needed.
-
-While you are in Synaptic, install xbmc and xbmc-bin from here or:
-
-{% highlight bash %}
-$ sudo apt-get install xbmc xbmc-bin
-{% endhighlight %}
+Example *sudo apt-get install xbmc=2:12.0~git20120502.1900-e9e0027-0precise xbmc-bin=2:12.0~git20120502.1900-e9e0027-0precise*
 
 Now just make sure xvba is selected in the Video Playback XBMC menu, enable TearFree in the Catalyst drivers or set the vsync options
 to prevent tearing and enjoy sweet, sweet HD hardware decoding.
