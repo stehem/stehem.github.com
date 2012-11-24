@@ -24,7 +24,7 @@ $ sudo apt-get install mplayer-vaapi
 
 Now to watch a movie with hardware decoding simply run this command:
 {% highlight bash %}
-$ mplayer -vo vaapi -va vaapi PATH-TO-MKV-FILE
+$ mplayer -vo vaapi -va vaapi -fs -heartbeat-cmd "xscreensaver-command -deactivate" PATH-TO-MKV-FILE
 {% endhighlight %}
 
 There are many commands to use mplayer from the command lines, the most useful are:  
@@ -32,3 +32,5 @@ fullscreen toggle: f
 volume down/up: 9/0  
 cycle through available subtitles: j  
 toggle subtitles: v  
+toggle OSD: O
+skip forward/backward: right or up arrow / left or down arrow 
